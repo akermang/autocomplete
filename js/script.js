@@ -17,6 +17,8 @@ input.keyup(function() {
 
 const setInputVal = function (value) {
     input.val(value); 
+    let newList = []
+    renderList(newList);
 }
 
 function renderList(list){
