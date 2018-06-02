@@ -1,4 +1,5 @@
-// Array of my html inputs and ul elements for auotocomplete ***************
+// lovList = Array of my html inputs and ul elements for auotocomplete,
+// Make shure to use the same  div.list-componet order like in this HTML example..
 const lovList = [{
   inputId: "#ap-autocomplit-input",
   listContainerId: "#ul-container",
@@ -13,7 +14,7 @@ const lovList = [{
 lovList.forEach(function (lov) {
   autocomplete(lov.inputId, lov.listContainerId, lov.data);
 })
-// *****************************************************************************************
+// ******************************************************************************
 //  the generic autocomplete function rendering data list of values for input 
 function autocomplete(input, listContainer, data) {
   let AutocompleteInput = $(input);
@@ -31,7 +32,6 @@ function autocomplete(input, listContainer, data) {
 
   function renderList(list) {
     let ul = document.createElement("ul");
-
     list.map(function (item) {
       let li = document.createElement("li");
       let span = document.createElement("span");
@@ -67,7 +67,6 @@ function autocomplete(input, listContainer, data) {
     AutocompleteInput.val("");
     renderList(data);
   }
-
 }
 
 
