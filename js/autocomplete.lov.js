@@ -2,7 +2,7 @@
 //  first list of value
 const lov = {
   input: "#ap-autocomplit-input",
-  listContainer: "#ul-a-container",
+  listContainer: "#ul-container",
   data: ["gal", "lior", "nir", "asaf", "ben", "rammy", "galgal", "ban", "banban","ram"]
 }
 
@@ -10,7 +10,7 @@ autocomplete(lov.input, lov.listContainer, lov.data);
 // scound list of value
 const lov1 = {
   input: "#ap-autocomplit-input1",
-  listContainer: "#ul-a-container1",
+  listContainer: "#ul-container1",
   data: ["anna", "anny", "gal", "sara", "danna", "rammy", "galgal", "ban", "banban","ram"]
 }
 
