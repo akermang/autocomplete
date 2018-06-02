@@ -12,13 +12,12 @@ const lovList = [{
 lovList.forEach(function (lov) {
   autocomplete(lov.inputId, lov.listContainerId, lov.data);
 })
-
-//  the generic autocomplete function
+// *****************************************************************************************
+//  the generic autocomplete function rendering list of values for input
 function autocomplete(input, listContainer, data) {
-  const AutocompleteInput = $(input);
-  const ListContainer = $(listContainer);
-
-
+  let AutocompleteInput = $(input);
+  let ListContainer = $(listContainer);
+  
   const setInputVal = function (value) {
     AutocompleteInput.val(value);
     emptyList()
