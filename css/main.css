@@ -105,3 +105,14 @@ ul li:hover span {
 ul li span {
   line-height: 1.5rem;
 }
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+}
