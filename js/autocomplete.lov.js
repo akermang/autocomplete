@@ -1,3 +1,4 @@
+// Array of my html inputs and ul elements for auotocomplete ***************
 const lovList = [{
   inputId: "#ap-autocomplit-input",
   listContainerId: "#ul-container",
@@ -13,7 +14,7 @@ lovList.forEach(function (lov) {
   autocomplete(lov.inputId, lov.listContainerId, lov.data);
 })
 // *****************************************************************************************
-//  the generic autocomplete function rendering list of values for input
+//  the generic autocomplete function rendering data list of values for input 
 function autocomplete(input, listContainer, data) {
   let AutocompleteInput = $(input);
   let ListContainer = $(listContainer);
