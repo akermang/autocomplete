@@ -77,12 +77,16 @@ div.list-componet {
 
 input {
   border-radius: 7px;
+  border: 2px solid #bcbbbb;
   outline: 0;
   height: 2em;
+  font-size: 100%;
+  line-height: 1.5rem;
+  color: #7b7272;
 }
 
 input:focus {
-  border-color: #817373;
+  border-color: #696161;
 }
 
 ul li {
