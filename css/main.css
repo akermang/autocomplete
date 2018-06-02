@@ -71,6 +71,33 @@ table {
 }
 
 div.list-componet {
-  width: 300px;
+  width: fit-content;
   margin: 10px auto;
+}
+
+input {
+  border-radius: 7px;
+  outline: 0;
+  height: 2em;
+}
+
+input:focus {
+  border-color: #817373;
+}
+
+ul li {
+  border-bottom: 2px solid #bcbbbb;
+  color: #7b7272;
+}
+
+ul li:hover {
+  background: #817373
+}
+
+ul li:hover span {
+  color: #ffffff;
+}
+
+ul li span {
+  line-height: 1.5rem;
 }

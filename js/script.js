@@ -19,7 +19,7 @@ function renderList(list) {
     let span = document.createElement("span");
     span.innerText = item;
     li.appendChild(span);
-    span.addEventListener("click", setInputVal.bind(event, item))
+    li.addEventListener("click", setInputVal.bind(event, item))
     ul.appendChild(li);
   })
   element.html(ul);
