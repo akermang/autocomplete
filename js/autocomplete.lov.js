@@ -1,26 +1,23 @@
-//  must use Jquery
-//  first list of value
-const lov = {
-  input: "#ap-autocomplit-input",
-  listContainer: "#ul-container",
-  data: ["gal", "lior", "nir", "asaf", "ben", "rammy", "galgal", "ban", "banban","ram"]
-}
+const lovList = [{
+  inputId: "#ap-autocomplit-input",
+  listContainerId: "#ul-container",
+  data: ["gal", "lior", "nir", "asaf", "ben", "rammy", "galgal", "ban", "banban", "ram"]
+},
+{
+  inputId: "#ap-autocomplit-input1",
+  listContainerId: "#ul-container1",
+  data: ["anna", "anny", "gal", "sara", "danna", "rammy", "galgal", "ban", "banban", "ram"]
+}]
 
-autocomplete(lov.input, lov.listContainer, lov.data);
-// scound list of value
-const lov1 = {
-  input: "#ap-autocomplit-input1",
-  listContainer: "#ul-container1",
-  data: ["anna", "anny", "gal", "sara", "danna", "rammy", "galgal", "ban", "banban","ram"]
-}
-
-autocomplete(lov1.input,  lov1.listContainer, lov1.data);
+lovList.forEach(function (lov) {
+  autocomplete(lov.inputId, lov.listContainerId, lov.data);
+})
 
 //  the generic autocomplete function
 function autocomplete(input, listContainer, data) {
   const AutocompleteInput = $(input);
   const ListContainer = $(listContainer);
-  
+
 
   const setInputVal = function (value) {
     AutocompleteInput.val(value);
