@@ -2,6 +2,10 @@ const data = ["gal", "lior", "nir", "asaf", "ben", "rammy", "galgal", "ban", "ba
 
 const setInputVal = function (value) {
   input.val(value);
+  emptyList()
+}
+
+function emptyList() {
   let emptyList = []
   renderList(emptyList);
 }
@@ -20,6 +24,7 @@ function renderList(list) {
   })
   element.html(ul);
 }
+
 renderList(data);
 
 function filterList(listArr, val) {
@@ -40,6 +45,7 @@ input.keyup(function () {
   let val = input.val();
   filterList(data, val);
 });
+
 input.focus()
 
 function resetInput() {
