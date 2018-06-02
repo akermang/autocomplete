@@ -66,8 +66,6 @@ function autocomplete(input, listContainer, data) {
     filterList(data, val);
   });
 
-  AutocompleteInput.focus()
-
   function resetInput() {
     AutocompleteInput.val("");
     renderList(data);
