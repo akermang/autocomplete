@@ -83,6 +83,7 @@ input {
   font-size: 100%;
   line-height: 1.5rem;
   color: #7b7272;
+  padding: 0.2em;
 }
 
 input:focus {
@@ -96,6 +97,7 @@ div.ul-container {
 ul li {
   border-bottom: 2px solid #bcbbbb;
   color: #7b7272;
+  padding: 0.2em;
 }
 
 ul li:hover {
