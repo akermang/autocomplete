@@ -71,8 +71,9 @@ table {
 }
 
 div.list-componet {
-  width: fit-content;
+  max-width: 280px;
   margin: 1em;
+
 }
 
 input {
@@ -87,16 +88,17 @@ input {
 }
 
 input:focus {
-  border-color: #696161;
+  border-color: #50518c;
 }
 div.ul-container {
   max-height: 200px;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 ul li {
   border-bottom: 2px solid #bcbbbb;
-  color: #7b7272;
+  background-color: #50518c;
+  color: #ffffff;
   padding: 0.2em;
 }
 
@@ -115,6 +117,47 @@ ul li span {
 main {
   display: flex;
   justify-content: center;
+}
+
+@keyframes donut-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.screan {
+  background: #ffffff;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.donut-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+/*   opacity: 1; */
+}
+.donut {
+/*   display: inline-block; */
+  border: 4px solid #50518c;
+  border-left-color: rgba(0, 0 ,0 ,0.1);
+  border-top-color: #50518cb2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: donut-spin 0.8s linear infinite;
+  opacity: 1;
+  opacity: 1;
+/*   margin-top: calc(50vh - 15px); */
+/*   margin-left: calc(50% - 15px); */
 }
 
 @media (max-width: 600px) {

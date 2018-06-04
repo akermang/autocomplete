@@ -1,11 +1,6 @@
 // lovList = Array of my html inputs and ul elements for auotocomplete,
 // Make shure to use the same  div.list-componet order like in this HTML example..
 const lovList = [{
-  inputId: "#ap-autocomplit-input",
-  listContainerId: "#ul-container",
-  data: ["gal", "lior", "nir", "asaf", "ben", "rammy", "galgal", "ban", "banban", "ram"]
-},
-{
   inputId: "#ap-autocomplit-input1",
   listContainerId: "#ul-container1",
   data: ["anna", "anny", "gal", "sara", "danna", "rammy", "galgal", "ban", "banban", "ram"]
