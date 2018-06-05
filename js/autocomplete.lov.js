@@ -50,7 +50,8 @@ function autocomplete(input, listContainer, data) {
       renderList(newList)
     }
     else {
-      AutocompleteInputMessage.html("Record does not exist")
+      renderList(listArr);
+      AutocompleteInputMessage.html("Record does not exist");
     }
     // else {
     //   resetInput();
