@@ -96,6 +96,9 @@ input {
   padding: 0.2em;
   margin-bottom: 0.5em;
   width: 96%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 input:focus {
