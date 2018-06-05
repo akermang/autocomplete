@@ -14,7 +14,7 @@ lovList.forEach(function (lov) {
 function autocomplete(input, listContainer, data) {
   let AutocompleteInput = $(input);
   let ListContainer = $(listContainer);
-  let AutocompleteInputMessage = $(input + "-p")
+  let AutocompleteInputMessage = $(input + "-massage")
   
   const setInputVal = function (value) {
     AutocompleteInput.val(value);
