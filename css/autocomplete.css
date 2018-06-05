@@ -75,6 +75,11 @@ div.list-componet {
   margin: 1em;
 }
 
+div.list-componet p {
+  min-height: 1em;
+  color: red;
+}
+
 h2 {
   color: #1a1dd1;
   padding: 5px;

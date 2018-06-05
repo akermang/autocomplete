@@ -14,6 +14,7 @@ lovList.forEach(function (lov) {
 function autocomplete(input, listContainer, data) {
   let AutocompleteInput = $(input);
   let ListContainer = $(listContainer);
+  let AutocompleteInputMessage = $(input + "-p")
   
   const setInputVal = function (value) {
     AutocompleteInput.val(value);
@@ -36,6 +37,7 @@ function autocomplete(input, listContainer, data) {
       ul.appendChild(li);
     })
     ListContainer.html(ul);
+    AutocompleteInputMessage.html("")
   }
 
   renderList(data);
@@ -48,9 +50,12 @@ function autocomplete(input, listContainer, data) {
       renderList(newList)
     }
     else {
-      resetInput();
+      AutocompleteInputMessage.html("Record does not exist")
     }
-    return newList;
+    // else {
+    //   resetInput();
+    // }
+    // return newList;
   }
 
   AutocompleteInput.keyup(function () {
