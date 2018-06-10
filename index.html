@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC>
 
 <html lang="en">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +13,18 @@
 
 <body>
   
+
   <main>
+      <div class="donut-container">
+          <div class="screan">
+            <div class="donut"></div>
+            <h2 class="donut-text"> Executing</h2>
+          </div>
+        </div>
     <div class="container">
       <div class="list-componet">
         <h2>SalesOrders_GetItems</h2>
         <div>
-          <p id="ap-autocomplit-input-massage"></p>
           <input id="ap-autocomplit-input" type="text">
         </div>
         <div id="ul-container" class="ul-container">
@@ -27,7 +34,6 @@
       <div class="list-componet">
         <h2>Name example</h2>
         <div>
-            <p id="ap-autocomplit-input1-massage"></p>
           <input id="ap-autocomplit-input1" type="text">
         </div>
         <div id="ul-container1" class="ul-container">
@@ -35,16 +41,12 @@
         </div>
       </div>
     </div>
-    <div class="donut-container">
-      <div class="screan">
-        <div class="donut"></div>
-        <h2 class="donut-text"> Executing</h2>
-      </div>
-    </div>
+
   </main>
-  
+
   <script src="js/api.js"></script>
   <script src="js/autocomplete.lov.js"></script>
 
 </body>
+
 </html>

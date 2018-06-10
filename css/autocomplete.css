@@ -1,7 +1,4 @@
-/* line 1, ../scss/base/_base.scss */
-main {
-  height: 100%;
-}
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -45,7 +42,9 @@ body, html {
 body {
   line-height: 1;
   font-size: 22px;
+  width: 100%;
 }
+
 
 /* line 37, ../scss/base/_reset.scss */
 ol, ul {
@@ -71,18 +70,21 @@ table {
 }
 
 div.list-componet {
-  width: 280px;
-  margin: 1em;
-}
+  width: calc(50% - 10px);
+  padding: 10px 0;}
 
 div.list-componet p {
   min-height: 1em;
   color: red;
 }
 
+main {
+  width: 100%;
+  height: 100%;
+}
+
 h2 {
   color: #1a1dd1;
-  padding: 5px;
 }
 
 input {
@@ -95,7 +97,7 @@ input {
   color: #7b7272;
   padding: 0.2em;
   margin-bottom: 0.5em;
-  width: 96%;
+  width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -120,6 +122,10 @@ ul li {
   padding: 0.5em;
 }
 
+ul li.massage {
+  background: #af4817;
+}
+
 ul li:hover {
   background: #817373
 }
@@ -134,7 +140,10 @@ ul li span {
 
 .container {
   display: flex;
-  justify-content: center;
+  width: 568px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 16px;
 }
 
 @keyframes donut-spin {
@@ -155,13 +164,17 @@ ul li span {
 }
 
 .donut-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction:column;
   height: 100vh;
   width: 100%;
-  transform: translateY(-75vh);
 }
 
 .donut-container h2 {
@@ -176,7 +189,7 @@ ul li span {
   height: 50px;
   animation: donut-spin 0.8s linear infinite;
   opacity: 1;
-  z-index: 100;
+  /* z-index: 100; */
 }
 
 @media (max-width: 600px) {
@@ -184,12 +197,9 @@ ul li span {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    width: 100%;
   }
   div.list-componet {
     width: 100%;
-  }
-
-  .donut-container {
-    transform: translateY(-100vh);
   }
 }
